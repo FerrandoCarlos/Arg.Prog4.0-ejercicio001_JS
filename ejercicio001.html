@@ -1,0 +1,23 @@
+<script>
+  /*Dadas las variables nombre y apellido validar y mostrar la respuesta en consola. Las condiciones son
+   * Cada una de las variables debe tener 3 caracteres o más.
+   * Si ambas variables cumplen la consigna mostrar el nombre y el apellido y un mensaje de éxito en consola.
+   * Si una o ambas variables no cumplen con el requisito indicar en un cartel el error (y cuál es la variable que no cumple o si son ambas)*/
+
+  var nombre = "Sergio";
+  var apellido = "Ro";
+
+  if (nombre.length < 3 || apellido.length < 3) {
+    if (nombre.length < 3 && apellido.length < 3) {
+      console.error(
+        "Error: El nombre y apellido debe tener al menos 3 caracteres"
+      );
+    } else if (nombre.length < 3) {
+      console.error("Error: el nombre debe tener al menos 3 caracteres");
+    } else {
+      console.error("Error: El Apellido debe tener al menos 3 caracteres");
+    }
+  } else {
+    console.log("Nombre: " + nombre + "\n" + "Apellido: " + apellido);
+  }
+</script>
